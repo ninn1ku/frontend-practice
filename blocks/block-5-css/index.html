@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Блок 5. Основы CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Блок 5. Основы CSS</h1>
+
+  <!-- Задача 1 и 2: селекторы, стили страницы -->
+  <section id="about">
+    <h2>О нас</h2>
+    <p>Это <strong>учебная страница</strong> для практики CSS.</p>
+    <p>Посетите наш <a href="#">официальный сайт</a> или <a href="#">документацию</a>.</p>
+  </section>
+
+  <section id="news" class="section-block">
+    <h2>Новости</h2>
+    <p class="lead">Главная новость дня: CSS освоен на отлично.</p>
+    <p>Подробнее читайте в <a href="#">нашем блоге</a>.</p>
+  </section>
+
+  <section id="contacts" class="section-block">
+    <h2>Контакты</h2>
+    <p>Напишите нам: <a href="mailto:hi@example.com">hi@example.com</a></p>
+  </section>
+
+  <!-- Задача 3: три карточки -->
+  <section id="cards">
+    <h2>Карточки</h2>
+
+    <div class="cards-list">
+
+      <div class="card card-user">
+        <h3>Иван Иванов</h3>
+        <p>Frontend-разработчик с опытом 3 года.</p>
+        <p class="card-meta">📍 Москва</p>
+        <a href="#" class="btn">Написать</a>
+      </div>
+
+      <div class="card card-product">
+        <h3>Ноутбук Pro X</h3>
+        <p>Мощный ноутбук для работы и учёбы.</p>
+        <p class="card-meta">Цена: 89 990 ₽</p>
+        <a href="#" class="btn">Купить</a>
+      </div>
+
+      <div class="card card-article">
+        <h3>Как выучить CSS за месяц</h3>
+        <p>Практические советы и ресурсы для быстрого старта.</p>
+        <p class="card-meta">12 мая 2026 · 5 мин</p>
+        <a href="#" class="btn">Читать</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Задача 4: box model -->
+  <section id="boxmodel">
+    <h2>Box Model</h2>
+
+    <div class="box box-margin">margin</div>
+    <div class="box box-padding">padding</div>
+    <div class="box box-border">border</div>
+    <div class="box box-width">width</div>
+    <div class="box box-height">height</div>
+  </section>
+
+</body>
+</html>
