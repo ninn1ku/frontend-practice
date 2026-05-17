@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Формы — 4 задания</title>
+</head>
+
+<body>
+
+  <h1>Задание 1. Регистрация</h1>
+
+  <form action="#" method="post" onsubmit="alert('Форма отправлена!'); return false;"
+    onreset="return confirm('Очистить форму?')">
+
+    <fieldset>
+      <legend>Личные данные</legend>
+
+      <p>
+        <label>
+          Имя *<br>
+          <input type="text" name="firstname" required placeholder="Имес">
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Фамилия *<br>
+          <input type="text" name="lastname" required placeholder="Фамилиес">
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Дата рождения *<br>
+          <input type="date" name="dob" required>
+        </label>
+      </p>
+
+      <p>
+        Пол *<br>
+        <label><input type="radio" name="gender" value="male" required> Мужской</label>
+        <label><input type="radio" name="gender" value="female" required> Женский</label>
+        <label><input type="radio" name="gender" value="other" required> Хеликоптер</label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Контактные данные</legend>
+
+      <p>
+        <label>
+          Email *<br>
+          <input type="email" name="email" required placeholder="email@example.com">
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Телефон *<br>
+          <input type="tel" name="phone" required placeholder="+7 (999) 999-99-99">
+        </label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Пароль</legend>
+
+      <p>
+        <label>
+          Пароль *<br>
+          <input type="password" name="password" required minlength="8" placeholder="Минимум 8 символов">
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Подтверждение пароля *<br>
+          <input type="password" name="password_confirm" required minlength="8" placeholder="Минимум 8 символов">
+        </label>
+      </p>
+    </fieldset>
+
+    <p>
+      <label>
+        <input type="checkbox" name="agree" required>
+        Я согласен с <a href="#">условиями использования</a> *
+      </label>
+    </p>
+
+    <p>
+      <button type="submit">Зарегистрироваться</button>
+      <button type="reset">Очистить</button>
+    </p>
+
+    <p><small>* — обязательные поля</small></p>
+  </form>
+
+
+  <hr>
+
+
+  <h1>Задание 2. Фильтр каталога</h1>
+
+  <form action="#" method="get" onsubmit="alert('Фильтр применён!'); return false;"
+    onreset="return confirm('Сбросить фильтры?')">
+
+    <p>
+      <label>
+        Поиск<br>
+        <input type="search" name="search" placeholder="Введите запрос">
+      </label>
+    </p>
+
+    <p>
+      <label for="filter-category">Категория</label><br>
+      <select id="filter-category" name="category">
+        <option value="">-- Все категории --</option>
+        <option value="category_1">Категория 1</option>
+        <option value="category_2">Категория 2</option>
+        <option value="category_3">Категория 3</option>
+        <option value="category_4">Категория 4</option>
+        <option value="category_5">Категория 5</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="filter-sort">Сортировка</label><br>
+      <select id="filter-sort" name="sort">
+        <option value="">-- По умолчанию --</option>
+        <option value="price_asc">Цена: по возрастанию</option>
+        <option value="price_desc">Цена: по убыванию</option>
+        <option value="name_asc">Название: А–Я</option>
+        <option value="name_desc">Название: Я–А</option>
+        <option value="rating">По популярности</option>
+      </select>
+    </p>
+
+    <fieldset>
+      <legend>Диапазон цены</legend>
+      <p>
+        <label>От
+          <input type="number" name="price_min" min="0" placeholder="0">
+          &nbsp;
+        </label>
+        <label>До
+          <input type="number" name="price_max" min="0" placeholder="255000">
+        </label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Бренды</legend>
+      <p>
+        <label><input type="checkbox" name="brand" value="samsung"> Самсанг</label><br>
+        <label><input type="checkbox" name="brand" value="apple"> Яблоко</label><br>
+        <label><input type="checkbox" name="brand" value="xiaomi"> Касиёми</label><br>
+        <label><input type="checkbox" name="brand" value="asus"> Асус</label><br>
+        <label><input type="checkbox" name="brand" value="ardorgaming"> Ардор геминг</label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Наличие</legend>
+      <p>
+        <label><input type="radio" name="availability" value="all" checked> Все товары</label><br>
+        <label><input type="radio" name="availability" value="in_stock" checked> В наличии</label><br>
+        <label><input type="radio" name="availability" value="preorder" checked> Под заказ</label>
+      </p>
+    </fieldset>
+
+    <p>
+      <button type="submit">Применить</button>
+      <button type="reset">Сбросить</button>
+    </p>
+  </form>
+
+
+  <hr>
+
+
+  <h1>Задание 3. Обратная связь</h1>
+
+  <form action="#" method="post" onsubmit="alert('Сообщение отправлено!'); return false;">
+
+    <p>
+      <label for="fb-name">
+        Имя *<br>
+        <input type="text" name="name" required placeholder="Ваше имя">
+      </label>
+    </p>
+
+    <p>
+      <label>
+        Email *<br>
+        <input type="email" name="email" required placeholder="mail@example.com">
+      </label>
+    </p>
+
+    <p>
+      <label>
+        Тема *<br>
+        <input type="text" name="subject" required placeholder="Тема обращения">
+      </label>
+    </p>
+
+    <p>
+      <label for="fb-priority">Приоритет обращения *</label><br>
+      <select id="fb-priority" name="priority" required>
+        <option value="">-- Выберите приоритет --</option>
+        <option value="low">Низкий</option>
+        <option value="medium">Средний</option>
+        <option value="high">Высокий</option>
+        <option value="critical">Высоченный</option>
+      </select>
+    </p>
+
+    <p>
+      <label>
+        Сообщение *<br>
+        <textarea name="message" required rows="5" cols="50" placeholder="Опишите проблему.."></textarea>
+      </label>
+    </p>
+
+    <p>
+      <label>
+        Прикрепить файл<br>
+        <input type="file" name="attachment" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.txt">
+      </label>
+      <br><small>Поддерживаются: JPG, PNG, PDF, DOC, TXT</small>
+    </p>
+
+    <p>
+      <button type="submit">Отправить</button>
+    </p>
+
+    <p><small>* — обязательные поля</small></p>
+  </form>
+
+
+  <hr>
+
+
+  <h1>Задание 4. Анкета</h1>
+
+  <form action="#" method="post" onsubmit="alert('Анкета отправлена!'); return false;">
+
+    <fieldset>
+      <legend>Личные данные</legend>
+
+      <p <label>Имя *<br>
+        <input type="text" name="firstname" required placeholder="Иван">
+        </label>
+      </p>
+
+      <p>
+        <label>Фамилия *<br>
+          <input type="text" name="lastname" required placeholder="Иванов">
+        </label>
+      </p>
+
+      <p>
+        <label>Отчество<br>
+          <input type="text" name="middlename" placeholder="Иванович">
+        </label>
+      </p>
+
+      <p>
+        <label>Дата рождения *<br>
+          <input type="date" name="dob" required>
+        </label>
+      </p>
+
+      <p>
+        Пол *<br>
+        <label><input type="radio" name="gender" value="male" required> Мужской</label>
+        <label><input type="radio" name="gender" value="female" required> Женский</label>
+      </p>
+
+      <p>
+        <label>Гражданство *<br>
+          <select name="nationality" required>
+            <option value="">-- Выберите --</option>
+            <option value="ru">Россия</option>
+            <option value="by">Беларусь</option>
+            <option value="kz">Казахстан</option>
+            <option value="other">Другое</option>
+          </select>
+        </label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Контактные данные</legend>
+
+      <p>
+        <label>Email *<br>
+          <input type="email" name="email" required placeholder="ivan@example.com">
+        </label>
+      </p>
+
+      <p>
+        <label>Телефон *<br>
+          <input type="tel" name="phone" required placeholder="+7 (999) 999-99-99">
+        </label>
+      </p>
+
+      <p>
+        <label>Город *<br>
+          <input type="text" name="city" required placeholder="Москва">
+        </label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Предпочтения</legend>
+
+      <label>Язык *<br>
+        <select name="language" required>
+          <option value="">-- Выберите --</option>
+          <option value="ru">Русский</option>
+          <option value="en">Английский</option>
+          <option value="de">Немецкий</option>
+        </select>
+      </label>
+
+      <p>Способ связи *<br>
+        <label><input type="radio" name="contact" value="email" required> Email</label>
+        <label><input type="radio" name="contact" value="phone" required> Телефон</label>
+        <label><input type="radio" name="contact" value="messenger" required> Мессенджер</label>
+      </p>
+
+      <p>Интересы<br>
+        <label><input type="checkbox" name="interests" value="music"> Музыка</label>
+        <label><input type="checkbox" name="interests" value="science"> Наука</label>
+        <label><input type="checkbox" name="interests" value="art"> Искусство</label>ф
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Дополнительная информация</legend>
+
+      <p>
+        <label>Образование *<br>
+          <select name="education" required>
+            <option value="">-- Выберите --</option>
+            <option value="school">Среднее</option>
+            <option value="bachelor">Бакалавриат</option>
+            <option value="master">Магистратура</option>
+          </select>
+        </label>
+      </p>
+
+      <p>
+        <label>Опыт работы (лет)<br>
+          <input type="number" name="experience" min="0" max="100" placeholder="0">
+        </label>
+      </p>
+
+      <p>
+        <label>О себе<br>
+          <textarea name="about" rows="4" placeholder="Навыки, цели..."></textarea>
+        </label>
+      </p>
+
+      <p>
+        <label>Фото<br>
+          <input type="file" name="avatar" accept="image/*">
+        </label>
+      </p>
+
+      <p>
+        <label>
+          <input type="checkbox" name="agree" required>
+          Согласен *
+        </label>
+      </p>
+    </fieldset>
+
+    <button type="submit">Отправить</button>
+    <button type="reset">Сбросить</button>
+
+    <p><small>* — обязательные поля</small></p>
+  </form>
+
+</body>
+
+</html>
