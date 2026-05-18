@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Блок 6. Размеры и поток</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Блок 6. Размеры, поток, display, overflow, box-sizing</h1>
+
+  <!-- Задача 1: карточки одинаковой ширины -->
+  <section id="task1">
+    <h2>Задача 1. Карточки</h2>
+    <div class="cards-grid">
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/11/400/200" alt="Горы">
+        <div class="card-body">
+          <h3>Горные вершины</h3>
+          <p>Захватывающие виды горных пейзажей. Идеально для треккинга и активного отдыха на свежем воздухе вдали от городского шума.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/12/400/200" alt="Океан">
+        <div class="card-body">
+          <h3>Океанские просторы</h3>
+          <p>Бескрайние водные пространства.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/13/400/200" alt="Лес">
+        <div class="card-body">
+          <h3>Дремучий лес</h3>
+          <p>Тихое место для отдыха. Грибы, ягоды, пение птиц и запах хвои. Отличный вариант для пешего похода с палаткой на несколько дней.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/14/400/200" alt="Пустыня">
+        <div class="card-body">
+          <h3>Пески пустыни</h3>
+          <p>Безграничные дюны и звёздное небо ночью.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/15/400/200" alt="Город">
+        <div class="card-body">
+          <h3>Ночной город</h3>
+          <p>Огни мегаполиса, бесконечная энергия улиц и тысячи историй за каждым окном. Идеально для городских прогулок и стритфотографии.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/16/400/200" alt="Водопад">
+        <div class="card-body">
+          <h3>Водопады джунглей</h3>
+          <p>Мощные потоки воды в окружении тропической растительности.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/17/400/200" alt="Снег">
+        <div class="card-body">
+          <h3>Зимние просторы</h3>
+          <p>Белоснежные поля, морозный воздух и полная тишина. Идеально для лыж, сноуборда и горячего чая у камина после насыщенного дня.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/18/400/200" alt="Закат">
+        <div class="card-body">
+          <h3>Закат на горизонте</h3>
+          <p>Золотой час.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Задача 2: display -->
+  <section id="task2">
+    <h2>Задача 2. Display</h2>
+
+    <div class="demo-block">
+      <h3>block</h3>
+      <div class="demo-label">Я block</div>
+      <div class="demo-label">Я тоже block — занимаю всю строку</div>
+    </div>
+
+    <div class="demo-block">
+      <h3>inline</h3>
+      <span class="demo-inline">Я inline</span>
+      <span class="demo-inline">Я рядом</span>
+      <span class="demo-inline">Мы все в одной строке</span>
+    </div>
+
+    <div class="demo-block">
+      <h3>inline-block</h3>
+      <span class="demo-inline-block">inline-block 1</span>
+      <span class="demo-inline-block">inline-block 2</span>
+      <span class="demo-inline-block">inline-block 3</span>
+    </div>
+
+    <div class="demo-block">
+      <h3>none</h3>
+      <p>Следующий блок скрыт через display: none — его нет в потоке:</p>
+      <div class="demo-none">Меня не видно</div>
+      <p>← здесь должен был быть блок, но его нет</p>
+    </div>
+
+  </section>
+
+  <!-- Задача 3: overflow -->
+  <section id="task3">
+    <h2>Задача 3. Overflow</h2>
+    <div class="overflow-grid">
+
+      <div class="overflow-box overflow-visible">
+        <strong>visible</strong>
+        <p>Текст вылезает за пределы блока и не обрезается. Это поведение по умолчанию. Контент просто выходит наружу и перекрывает соседние элементы.</p>
+      </div>
+
+      <div class="overflow-box overflow-hidden">
+        <strong>hidden</strong>
+        <p>Текст обрезается по границе блока. Всё что не влезло — скрыто и недоступно. Полосы прокрутки не появляются.</p>
+      </div>
+
+      <div class="overflow-box overflow-scroll">
+        <strong>scroll</strong>
+        <p>Полосы прокрутки появляются всегда, даже если контент влезает. Можно прокрутить чтобы увидеть весь текст внутри блока фиксированного размера.</p>
+      </div>
+
+      <div class="overflow-box overflow-auto">
+        <strong>auto</strong>
+        <p>Полоса прокрутки появляется только если контент не влезает. Умный режим — не засоряет интерфейс лишними скроллбарами когда они не нужны.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Задача 4: box-sizing -->
+  <section id="task4">
+    <h2>Задача 4. Box-sizing</h2>
+    <div class="boxsizing-demo">
+
+      <div class="box-content-box">
+        <strong>content-box</strong>
+        <p>width: 300px, padding: 20px, border: 5px</p>
+        <p>Итого: 300 + 40 + 10 = <strong>350px</strong></p>
+      </div>
+
+      <div class="box-border-box">
+        <strong>border-box</strong>
+        <p>width: 300px, padding: 20px, border: 5px</p>
+        <p>Итого: ровно <strong>300px</strong></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Задача 5: каталог -->
+  <section id="task5">
+    <h2>Задача 5. Каталог</h2>
+    <div class="catalog-grid">
+
+      <div class="catalog-card">
+        <img src="https://picsum.photos/seed/21/400/200" alt="Продукт">
+        <div class="catalog-body">
+          <h3>Очень длинное название товара которое может сломать раскладку</h3>
+          <p>Описание товара. Качественный продукт для ежедневного использования.</p>
+          <a href="#" class="btn">Купить</a>
+        </div>
+      </div>
+
+      <div class="catalog-card">
+        <img src="https://picsum.photos/seed/22/400/200" alt="Продукт">
+        <div class="catalog-body">
+          <h3>Товар</h3>
+          <p>Короткое описание.</p>
+          <a href="#" class="btn">Купить</a>
+        </div>
+      </div>
+
+      <div class="catalog-card">
+        <img src="https://picsum.photos/seed/23/400/200" alt="Продукт">
+        <div class="catalog-body">
+          <h3>Средний товар с нормальным названием</h3>
+          <p>Подробное описание товара с характеристиками, отзывами покупателей и условиями доставки по всей стране.</p>
+          <a href="#" class="btn">Купить</a>
+        </div>
+      </div>
+
+      <div class="catalog-card">
+        <img src="https://picsum.photos/seed/24/400/200" alt="Продукт">
+        <div class="catalog-body">
+          <h3>Ещё один товар</h3>
+          <p>Описание средней длины для демонстрации выравнивания кнопок.</p>
+          <a href="#" class="btn">Купить</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
