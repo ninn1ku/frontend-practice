@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Блок 7. Flexbox база</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Блок 7. Flexbox база</h1>
+
+  <!-- Задача 1: Меню -->
+  <section id="task1">
+    <h2>Задача 1. Меню</h2>
+    <header class="navbar">
+      <div class="navbar-logo">
+        <img src="../../assets/img/logo.jpg" alt="⚡ PokéSite">
+      </div>
+      <nav class="navbar-links">
+        <a href="#">Главная</a>
+        <a href="#">Покедекс</a>
+        <a href="#">Команды</a>
+        <a href="#">Турниры</a>
+        <a href="#">Новости</a>
+      </nav>
+      <button class="btn btn-primary">Войти</button>
+    </header>
+  </section>
+
+  <!-- Задача 2: Центрирование -->
+  <section id="task2">
+    <h2>Задача 2. Центрирование</h2>
+    <div class="center-container">
+      <div class="center-box">
+        <h3>Стань тренером</h3>
+        <p>Начни своё путешествие по миру покемонов. Поймай их всех и стань чемпионом региона.</p>
+        <a href="#" class="btn btn-primary">Начать игру</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Задача 3: Сетка карточек (покедекс) -->
+  <section id="task3">
+    <h2>Задача 3. Сетка карточек</h2>
+    <div class="cards-grid">
+
+      <div class="card card-fire">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" alt="Charmander">
+        <div class="card-body">
+          <h3>Charmander <span class="card-id">#004</span></h3>
+          <p>Ящерица с пламенем на хвосте.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card card-water">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png" alt="Squirtle">
+        <div class="card-body">
+          <h3>Squirtle <span class="card-id">#007</span></h3>
+          <p>Черепашка с мощными водяными пушками.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card card-grass">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur">
+        <div class="card-body">
+          <h3>Bulbasaur <span class="card-id">#001</span></h3>
+          <p>На спине луковица которая вырастает в цветок.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card card-electric">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu">
+        <div class="card-body">
+          <h3>Pikachu <span class="card-id">#025</span></h3>
+          <p>Электрическая мышка. Любит кетчуп.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card card-psychic">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png" alt="Mewtwo">
+        <div class="card-body">
+          <h3>Mewtwo <span class="card-id">#150</span></h3>
+          <p>Создан в лаборатории. Сильнейший покемон.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card card-ghost">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png" alt="Gengar">
+        <div class="card-body">
+          <h3>Gengar <span class="card-id">#094</span></h3>
+          <p>Прячется в тени и снижает температуру.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card card-dragon">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png" alt="Dragonite">
+        <div class="card-body">
+          <h3>Dragonite <span class="card-id">#149</span></h3>
+          <p>Добродушный дракон. Облетает Землю за 16 часов.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card card-ice">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png" alt="Lapras">
+        <div class="card-body">
+          <h3>Lapras <span class="card-id">#131</span></h3>
+          <p>Перевозит людей через море на своей спине.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card card-normal">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png" alt="Snorlax">
+        <div class="card-body">
+          <h3>Snorlax <span class="card-id">#143</span></h3>
+          <p>Ест 400 кг еды в день и сразу засыпает.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="card card-fire">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" alt="Charizard">
+        <div class="card-body">
+          <h3>Charizard <span class="card-id">#006</span></h3>
+          <p>Огнедышащий дракон. Эволюция Charmander.</p>
+          <a href="#" class="btn">Подробнее</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Задача 4: Команда -->
+  <section id="task4">
+    <h2>Задача 4. Наша команда</h2>
+    <div class="team-grid">
+
+      <div class="team-card">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Ash">
+        <h3>Ash Ketchum</h3>
+        <p class="team-role">Главный тренер</p>
+        <a href="#" class="btn">Подробнее</a>
+      </div>
+
+      <div class="team-card">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" alt="Misty">
+        <h3>Misty</h3>
+        <p class="team-role">Специалист по воде</p>
+        <a href="#" class="btn">Подробнее</a>
+      </div>
+
+      <div class="team-card">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png" alt="Brock">
+        <h3>Brock</h3>
+        <p class="team-role">Специалист по скалам</p>
+        <a href="#" class="btn">Подробнее</a>
+      </div>
+
+      <div class="team-card">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Gary">
+        <h3>Gary Oak</h3>
+        <p class="team-role">Соперник</p>
+        <a href="#" class="btn">Подробнее</a>
+      </div>
+
+      <div class="team-card">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png" alt="Giovanni">
+        <h3>Giovanni</h3>
+        <p class="team-role">Лидер Team Rocket</p>
+        <a href="#" class="btn">Подробнее</a>
+      </div>
+
+      <div class="team-card">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png" alt="Professor">
+        <h3>Prof. Oak</h3>
+        <p class="team-role">Профессор покемонов</p>
+        <a href="#" class="btn">Подробнее</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Задача 5: Панель действий -->
+  <section id="task5">
+    <h2>Задача 5. Панель действий</h2>
+    <div class="action-bar">
+      <h3 class="action-title">Управление покедексом</h3>
+      <div class="action-buttons">
+        <button class="btn btn-action">Фильтр</button>
+        <button class="btn btn-action">Экспорт</button>
+        <button class="btn btn-primary">+ Добавить</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
