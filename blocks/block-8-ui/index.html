@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блок 8. Компоновка интерфейса.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="task1">
+        <h2>Задача 1. Шапка сайта</h2>
+        <header class="navbar">
+            <div class="navbar-logo">
+                <img src="../../assets/img/logo.jpg" alt="⚡ PokéSite">
+            </div>
+            <nav class="navbar-links">
+                <a href="#">Главная</a>
+                <a href="#">Покедекс</a>
+                <a href="#">Команды</a>
+                <a href="#">Турниры</a>
+                <a href="#">Новости</a>
+            </nav>
+            <div class="navbar-right">
+                <input type="text" class="search-input" placeholder="Поиск...">
+                <button class="btn btn-enter">Войти</button>
+            </div>
+        </header>
+    </section>
+
+    <section id="task2">
+        <h2>Задача 2. Панель управления</h2>
+        <header class="control-panel">
+            <h3 class="task2-title">Панель управления</h3>
+            <nav class="navbar-links">
+                <a href="#">Главная</a>
+                <a href="#">Сеть</a>
+                <a href="#">Безопасность</a>
+                <a href="#">Новости</a>
+            </nav>
+            <div class="panel-right">
+                <input type="text" class="search-input" placeholder="Поиск...">
+                <div class="panel-buttons">
+                    <button class="btn btn-panel">Управление</button>
+                    <button class="btn btn-panel">Настройки</button>
+                    <button class="btn btn-panel">Конфигурация</button>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <section id="task3">
+        <h2>Задача 3. Карточка товара</h2>
+        <div class="cards-grid">
+
+            <div class="card cpp-book">
+                <img src="https://i.pinimg.com/736x/45/25/01/4525012e6b028b64c6ff16904281c63b.jpg" alt="cpp-book"
+                    class="card-logo">
+                <div class="card-body">
+                    <div class="card-header">
+                        <h3>C++ guide</h3>
+                        <p>Учебное пособие по изучению ц крест крест</p>
+                    </div>
+                    <div class="card-meta">
+                        <p>Стоимость: 5$</p>
+                        <p>Рейтинг: <span class="rating">★★★★☆</span></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn">Купить</a>
+                        <a href="#" class="btn">В избранное</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="task4">
+        <h2>Задача 4. Личный кабинет.</h2>
+        <div class="cabinet">
+            <aside class="cabinet-sidebar">
+                <div class="sidebar-profile">
+                    <img src="https://i.pinimg.com/736x/46/72/b7/4672b70c340eb161a3d49f51317fb53e.jpg" alt="Аватар">
+                    <p>Monki</p>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="#" class="sidebar-link">Профиль</a>
+                    <a href="#" class="sidebar-link">Сообщения</a>
+                    <a href="#" class="sidebar-link">Уведомления</a>
+                    <a href="#" class="sidebar-link">Настройки</a>
+                </nav>
+            </aside>
+            <div class="cabinet-content">
+                <div class="content-header">
+                    <h3>Monki header content</h3>
+                    <div class="content-header-right">
+                        <input type="text" class="search-input" placeholder="Поиск...">
+                        <button class="btn btn-profile">Caress</button>
+                    </div>
+                </div>
+                <div class="cabinet-stats">
+                    <div class="stats-item">
+                        <div class="stats-value">154</div>
+                        <div class="stats-label">Банана съедено</div>
+                    </div>
+                    <div class="stats-item">
+                        <div class="stats-value">12</div>
+                        <div class="stats-label">Тиктоков просмотрено</div>
+                    </div>
+                    <div class="stats-item">
+                        <div class="stats-value">Мировая экономика</div>
+                        <div class="stats-label">Построена</div>
+                    </div>
+                    <div class="stats-item">
+                        <div class="stats-value">2000</div>
+                        <div class="stats-label">Блох употреблено в пищу</div>
+                    </div>
+                </div>
+                <div class="cabinet-task">
+                    <nav class="task-nav">
+                        <ul class="task-nav-list">
+                            <li class="task-nav-item">Кидаться экскрементами</li>
+                            <li class="task-nav-item">Достать блох со спины соседа</li>
+                            <li class="task-nav-item">Сорвать 200 бананов</li>
+                            <li class="task-nav-item">Построить свою империю</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </section>
+
+    <section id="task5">
+  <h2>Задача 5. Строки интерфейса</h2>
+
+  <div class="interface-block">
+    <h4>Корзина</h4>
+    <div class="cart-item">
+      <img src="https://i.pinimg.com/736x/87/e5/d1/87e5d177fcfb42604f95025dce39bff7.jpg" alt="товар" class="cart-img">
+        <p class="cart-title">Крутой кот</p>
+      <div class="cart-right">
+        <p class="cart-price">500$</p>
+        <button class="btn btn-enter">Удалить</button>
+      </div>
+    </div>
+    <div class="cart-item">
+        <img src="https://i.pinimg.com/736x/44/b4/c0/44b4c06ea0e9fbbb49245d1e2933ac08.jpg" alt="товар" class="cart-img">
+        <p class="cart-title">Другой крутой кот</p>
+      <div class="cart-right">
+        <p class="cart-price">1000$</p>
+        <button class="btn btn-enter">Удалить</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="interface-block">
+    <h4>Пользователи</h4>
+    <div class="user-item">
+      <img src="https://i.pinimg.com/736x/63/9d/84/639d845d772a3a1166f8ef005d77be22.jpg" alt="юзер" class="user-avatar">
+        <p class="user-name">Котос Шелби</p>
+      <div class="user-right">
+        <span class="badge badge-active">На работе</span>
+        <button class="btn btn-profile">Профиль</button>
+      </div>
+    </div>
+    <div class="user-item">
+      <img src="https://i.pinimg.com/736x/fe/65/6c/fe656cc81e6fcfa8478acf7caf792733.jpg" alt="юзер" class="user-avatar">
+        <p class="user-name">Сабака</p>
+      <div class="user-right">
+        <span class="badge badge-banned">В школе</span>
+        <button class="btn btn-profile">Профиль</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="interface-block">
+    <h4>Уведомления</h4>
+    <div class="notification-item read">
+      <img src="https://i.pinimg.com/736x/6a/8a/78/6a8a78f853bffae68afc9c2b8cba819b.jpg" alt="увед" class="notification-icon">
+          <p class="notification-title">Легендарный черемша добавлен в инвентарь</p>
+        <span class="notification-date">5 мин назад</span>
+    </div>
+    <div class="notification-item unread">
+        <img src="https://i.pinimg.com/1200x/e4/b5/39/e4b539343d331cc683fcb27c0229dc97.jpg" alt="увед" class="notification-icon">
+        <p class="notification-title">Вызов на дуэль от #$%%%</p>
+      <span class="notification-date">12 мин назад</span>
+    </div>
+  </div>
+
+  <div class="interface-block">
+    <h4>Заказы</h4>
+    <div class="order-item">
+      <div class="order-info">
+        <p class="order-number">А-6767</p>
+        <p class="order-client">Черемша</p>
+      </div>
+      <p class="order-count">67 товаров</p>
+      <p class="order-total">1676 $</p>
+      <span class="badge badge-active">Доставлен</span>
+    </div>
+    <div class="order-item">
+      <div class="order-info">
+        <p class="order-number">А-1052</p>
+        <p class="order-client">Груша</p>
+      </div>
+      <p class="order-count">1 товар</p>
+      <p class="order-total">500 $</p>
+      <span class="badge badge-pending">Потерялся</span>
+    </div>
+  </div>
+
+</section>
+
+</body>
+
+</html>
