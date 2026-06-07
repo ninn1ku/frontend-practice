@@ -1,0 +1,152 @@
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1em;
+    background: #cc6f6f50;
+    padding: 1em;
+    border-radius: 12px;
+}
+
+.catalog-card {
+    background: #ffffff56;
+    border-radius: 12px;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #ffffff30;
+}
+
+.catalog-card img {
+    height: 120px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    background: #6f6fcc50;
+    padding: 1em;
+    border-radius: 12px;
+}
+
+.gallery-item {
+    background: #ffffff56;
+    border-radius: 12px;
+    border: 1px solid #ffffff30;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background: #52d45294;
+    border-radius: 12px;
+}
+
+.main-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffe066;
+}
+
+.main-logo img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.main-nav {
+    display: flex;
+    gap: 2em;
+    font-size: 1.3em;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: opacity 0.3s;
+}
+
+.main-nav a:hover {
+    opacity: 0.7;
+}
+
+.main-banner {
+    background: linear-gradient(135deg, #ff0e7267, #8d54f08a);
+    border-radius: 12px;
+    padding: 3em 2em;
+    text-align: center;
+}
+
+.main-banner h2 {
+    font-size: 2em;
+    margin: 0 0 0.5em;
+}
+
+.main-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    background: #6f6fcc50;
+    border-radius: 12px;
+}
+
+.feature-item {
+    background: #ffffff15;
+    border-radius: 12px;
+    padding: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #ffffff30;
+}
+
+.main-catalog {
+    background: #497cc950;
+    border-radius: 12px;
+    padding: 1.5em;
+}
+
+.main-reviews {
+    background: #5cc0b875;
+    border-radius: 12px;
+    padding: 1.5em;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.review-item {
+    background: #ffffff15;
+    border-radius: 8px;
+    padding: 1em;
+    border: 3px solid #ff0e72;
+}
+
+.review-item p {
+    margin: 0.5em;
+    font-style: italic;
+}
+
+.main-footer {
+    background-color: #f700ff;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
